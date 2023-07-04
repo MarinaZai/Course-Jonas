@@ -42,7 +42,6 @@ let markBMI = (markWeight / markHeight ** 2).toFixed(1);
 let johnBMI = (johnWeight / johnHeight ** 2).toFixed(1);
 let markHigherBMI = markBMI > johnBMI;
 //console.log(markBMI, johnBMI, markHigherBMI);
-
 if (markBMI > johnBMI) {
   console.log("Mark's BMI is higher than John's");
   console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}`);
@@ -69,4 +68,54 @@ if (markBMITwoEx > johnBMITwoEx) {
   console.log(
     `John's BMI ${johnBMITwoEx} is higher than Mark's ${markBMITwoEx}`
   );
+}
+
+//Coding challenge 3
+const averageScoreDolphins = (96 + 108 + 89) / 3;
+const averageScoreKoalas = (88 + 91 + 110) / 3;
+if (averageScoreDolphins > averageScoreKoalas) {
+  console.log("Winner Dolphins");
+} else if (averageScoreDolphins < averageScoreKoalas) {
+  console.log("Winner Koalas");
+} else {
+  console.log("It is draw");
+}
+
+const averageScoreDolphinsBonus1 = (97 + 112 + 101) / 3;
+const averageScoreKoalasBonus1 = (109 + 95 + 123) / 3;
+if (
+  averageScoreDolphinsBonus1 > averageScoreKoalasBonus1 &&
+  averageScoreDolphinsBonus1 >= 100
+) {
+  console.log("Winner Dolphins");
+} else if (
+  averageScoreDolphinsBonus1 < averageScoreKoalasBonus1 &&
+  averageScoreKoalasBonus1 >= 100
+) {
+  console.log("Winner Koalas");
+} else {
+  console.log("It is draw");
+}
+
+const averageScoreDolphinsBonus2 = (97 + 112 + 101) / 3;
+const averageScoreKoalasBonus2 = (109 + 95 + 106) / 3;
+
+if (
+  averageScoreDolphinsBonus2 > averageScoreKoalasBonus2 &&
+  averageScoreDolphinsBonus2 >= 100
+) {
+  console.log("Winner Dolphins");
+} else if (
+  averageScoreDolphinsBonus2 < averageScoreKoalasBonus2 &&
+  averageScoreKoalasBonus2 >= 100
+) {
+  console.log("Winner Koalas");
+} else if (
+  averageScoreDolphinsBonus2 === averageScoreKoalasBonus2 &&
+  averageScoreKoalasBonus2 >= 100 &&
+  averageScoreDolphinsBonus2 >= 100
+) {
+  console.log("It is draw");
+} else {
+  console.log("No winner!");
 }
