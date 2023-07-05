@@ -34,7 +34,7 @@ console.log(typeof 23);
 console.log(typeof "ssss"); */
 
 //CODING CHALLENGE 1
-let markWeight = 78;
+/* let markWeight = 78;
 let markHeight = 1.69;
 let johnWeight = 92;
 let johnHeight = 1.95;
@@ -119,3 +119,35 @@ if (
 } else {
   console.log("No winner!");
 }
+ */
+
+//CODDING CHALLENGE 4
+let bill = 275;
+let procent = bill >= 50 && bill <= 300 ? 15 : 20;
+let tipResult = (bill * procent) / 100;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tipResult}, and the total value ${
+    bill + tipResult
+  }`
+);
+
+let billTwo = 40;
+let procentTwo = billTwo >= 50 && billTwo <= 300 ? 15 : 20;
+let tipResultTwo = (billTwo * procentTwo) / 100;
+
+console.log(
+  `The bill was ${billTwo}, the tip was ${tipResultTwo}, and the total value ${
+    billTwo + tipResultTwo
+  }`
+);
+
+let billThree = 430;
+let procentThree = billThree >= 50 && billThree <= 300 ? 15 : 20;
+let tipResultThree = (billThree * procentThree) / 100;
+
+console.log(
+  `The bill was ${billThree}, the tip was ${tipResultThree}, and the total value ${
+    billThree + tipResultThree
+  }`
+);
