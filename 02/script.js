@@ -1,4 +1,4 @@
-//coding challenge(02)-1
+//CODING CHALLENGE(02)-1
 const calcAverage = (scoreOne, scoreTwo, scoreThree) => {
   return (scoreOne + scoreTwo + scoreThree) / 3;
 };
