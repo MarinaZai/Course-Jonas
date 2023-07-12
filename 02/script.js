@@ -21,7 +21,7 @@ const checkWinner = function () {
 checkWinner(); */
 
 //CODING CHALLENGE(02)-2
-const billsArray = [125, 555, 44];
+/* const billsArray = [125, 555, 44];
 
 let bill = billsArray[0];
 let procent = bill >= 50 && bill <= 300 ? 15 : 20;
@@ -57,3 +57,32 @@ const totalArray = [
   billsArray[2] + tipsArray[2],
 ];
 console.log(tipsArray, totalArray);
+ */
+
+//CODING CHALLENGE(02)-3
+const objectMark = {
+  fullName: "Mark Miller",
+  weight: 78,
+  height: 1.69,
+  calcBMI: function () {
+    return (this.weight / this.height ** 2).toFixed(1);
+  },
+};
+const objectJohn = {
+  fullName: "Mark Miller",
+  weight: 92,
+  height: 1.95,
+  calcBMI: function () {
+    return (this.weight / this.height ** 2).toFixed(1);
+  },
+};
+
+if (objectMark.calcBMI() > objectJohn.calcBMI()) {
+  console.log(
+    `Mark's BMI ${objectMark.calcBMI()} is higher than John's ${objectJohn.calcBMI()}`
+  );
+} else {
+  console.log(
+    `John's BMI ${objectJohn.calcBMI()} is higher than Mark's ${objectMark.calcBMI()}`
+  );
+}
