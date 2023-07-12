@@ -60,7 +60,7 @@ console.log(tipsArray, totalArray);
  */
 
 //CODING CHALLENGE(02)-3
-const objectMark = {
+/* const objectMark = {
   fullName: "Mark Miller",
   weight: 78,
   height: 1.69,
@@ -86,3 +86,29 @@ if (objectMark.calcBMI() > objectJohn.calcBMI()) {
     `John's BMI ${objectJohn.calcBMI()} is higher than Mark's ${objectMark.calcBMI()}`
   );
 }
+ */
+
+//CODING CHALLENGE(02)-4
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (i = 0; i < bills.length; i++) {
+  let tipResult =
+    (bills[i] * (bills[i] >= 50 && bills[i] <= 300 ? 15 : 20)) / 100;
+  tips.push(tipResult);
+  let total = bills[i] + tipResult;
+  totals.push(total);
+}
+console.log(tips);
+console.log(totals);
+
+let sum = 0;
+function calcAverage(arr) {
+  for (i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum/arr.length
+}
+;
+console.log(calcAverage(totals));
