@@ -2,7 +2,7 @@
 'use strict';
 
 //1)
-const temps = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+/* const temps = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 const temps2 = [5, -3, -1, -8, 'error', 20, 16, 24, 28, 30, 12, 6];
 
 const getAmplitude = function (temperatures1, temperatures2) {
@@ -23,4 +23,14 @@ const getAmplitude = function (temperatures1, temperatures2) {
   return max - min;
 };
 const amplitude = getAmplitude(temps, temps2);
-console.log(amplitude);
+console.log(amplitude); */
+
+//2
+const printForecast = function (array) {
+  let string = '';
+  for (let i = 0; i < array.length; i++) {
+    console.log((string = string + `... ${array[i]} degree in ${i+1} days ...`));
+  }
+};
+
+printForecast([17, 21, 23]);
